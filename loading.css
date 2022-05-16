@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.initial-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.initial-loading .typing {
+  text-align: center;
+}
+
+.initial-loading .typing span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  background: #3b82f6;
+  border-radius: 20px;
+  animation: typing 0.8s infinite alternate;
+}
+
+.initial-loading .typing span:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
+.initial-loading .typing span:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(0.5);
+  }
+}
